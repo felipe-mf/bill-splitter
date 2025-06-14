@@ -1,0 +1,65 @@
+# Node modules and Vite cache
+/frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Log files
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# Environment variables
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# IDE settings
+frontend/.DS_Store
+
+
+# Python compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.env.local
+
+# Bytecode cache
+*.pyc
+
+# Editor/IDE configs
+*.swp
+*.swo
+*.bak
+*.tmp
+.idea/
+.vscode/
+*.db
+
+# Logs
+*.log
+
+# Testing
+.pytest_cache/
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+htmlcov/
+
+# Migrations (if using something like Alembic)
+migrations/
+
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+*.pid
+docker-compose.override.yml

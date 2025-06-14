@@ -1,0 +1,75 @@
+/* FileUploader.css */
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, #f97316, #f59e0b); /* gradiente laranja moderno */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.label-pessoas {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.input-pessoas {
+  margin-left: 10px;
+  width: 60px;
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  margin-top: 15px;
+  background-color: #ea580c; /* laranja forte */
+  border: none;
+  padding: 12px;
+  font-weight: 700;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c2410c;
+}
+
+.result {
+  margin-top: 20px;
+  background-color: rgba(255 255 255 / 0.2);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.error {
+  margin-top: 20px;
+  color: #f87171; /* vermelho claro */
+  font-weight: 700;
+  text-align: center;
+}
