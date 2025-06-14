@@ -1,4 +1,4 @@
-# 💸 Bill Splitter
+# 💸 Splitr
 
 A simple and efficient web application that processes PDF documents containing billing information, extracts relevant monetary values, and splits the total amount among a specified number of people.
 
