@@ -16,19 +16,29 @@ const Index = () => {
         <div className="h-full w-full bg-[radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.1)_1px,transparent_0)] bg-[length:50px_50px]"></div>
       </div>
 
-      <div className="relative z-10 container mx-auto px-6 py-12">
-        {/* Cabeçalho */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-600 rounded-3xl mb-6 shadow-2xl">
-            <Wallet className="w-10 h-10 text-white" />
+      {/* Efeito de granulado grainy */}
+      <div className="absolute inset-0 opacity-[0.1] mix-blend-soft-light">
+        <div className="h-full w-full" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.4'/%3E%3C/svg%3E")`,
+          backgroundSize: '200px 200px'
+        }}></div>
+      </div>
+
+      <div className="relative z-10 container mx-auto px-1 py-6">
+        {/* Título e ícone alinhados à esquerda */}
+        <div className="mb-16 flex items-center gap-4">
+          <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-600 rounded-2xl shadow-2xl">
+            <Wallet className="w-6 h-6 text-white" />
           </div>
-          
-          <h1 className="text-6xl md:text-7xl font-bold mb-6">
+          <h1 className="text-4xl md:text-5xl font-bold">
             <span className="bg-gradient-to-r from-purple-200 via-indigo-200 to-blue-200 bg-clip-text text-transparent">
               Splitr
             </span>
           </h1>
-          
+        </div>
+
+        {/* Cabeçalho centralizado */}
+        <div className="text-center mb-16">
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
             Gerencie e divida suas contas de forma inteligente e automática
           </p>
