@@ -29,7 +29,7 @@ const FileUploader: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
-      const response = await axios.post("http://localhost:8000/analyze", formData, {
+      const response = await axios.post("https://06v5cucojk.execute-api.sa-east-1.amazonaws.com/analyze", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

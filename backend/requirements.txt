@@ -1,7 +1,16 @@
+# fastapi
+# uvicorn
+# pdfplumber==0.10.2
+# python-multipart
+# Pillow
+# pypdfium2
+# python-magic-bin==0.4.14 
+
 fastapi
 uvicorn
 pdfplumber==0.10.2
 python-multipart
 Pillow
 pypdfium2
-python-magic-bin==0.4.14 
+python-magic-bin==0.4.14
+mangum==0.17.0
